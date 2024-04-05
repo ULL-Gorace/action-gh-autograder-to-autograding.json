@@ -1,10 +1,5 @@
-import child_process from "child_process";
 import fs from "fs/promises";
-
-child_process.execSync("npm install yaml", { stdio: "inherit" });
-
-
-const YAML = await import("yaml");
+import YAML from "yaml";
 
 const autogradingFile = await fs.readFile(".github/workflows/classroom.yml", { encoding: "utf-8" })
 const autograding = YAML.parse(autogradingFile);

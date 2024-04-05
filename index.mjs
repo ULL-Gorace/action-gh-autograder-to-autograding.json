@@ -1,7 +1,7 @@
 import child_process from "child_process";
 import fs from "fs/promises";
 
-child_process.execSync("npm ci", { stdio: "inherit" });
+child_process.execSync("npm install yaml", { stdio: "inherit" });
 
 
 const YAML = await import("yaml");

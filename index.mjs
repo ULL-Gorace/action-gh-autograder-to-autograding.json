@@ -29,6 +29,6 @@ await fs.mkdir(".github/classroom", {
   recursive: true
 });
 
-await fs.writeFile(".github/classroom/autograding.json", JSON.stringify(tests, null, 2));
+await fs.writeFile(".github/classroom/autograding.json", JSON.stringify({ tests }, null, 2));
 
 

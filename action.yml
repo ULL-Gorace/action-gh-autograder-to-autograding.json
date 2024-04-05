@@ -1,0 +1,5 @@
+name: 'Github autograder to autograding.json'
+description: 'Transform Github autograder to autograding.json'
+runs:
+  using: 'node20'
+  main: 'index.mjs'

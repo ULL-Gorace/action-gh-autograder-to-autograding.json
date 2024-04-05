@@ -1,0 +1,12 @@
+{
+  "name": "gh-autograder-to-autograding.json",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {},
+  "author": "Claudio Yanes",
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.4.1"
+  }
+}

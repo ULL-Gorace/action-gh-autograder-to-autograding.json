@@ -1,6 +1,10 @@
+import child_process from "child_process";
 import fs from "fs/promises";
-import YAML from "yaml";
 
+child_process.execSync("npm ci", { stdio: "inherit" });
+
+
+const YAML = await import("yaml");
 
 const autogradingFile = await fs.readFile(".github/workflows/classroom.yml", { encoding: "utf-8" })
 const autograding = YAML.parse(autogradingFile);
